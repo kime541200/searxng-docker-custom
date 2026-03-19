@@ -4,3 +4,6 @@ searxng-docker.service
 caddy
 srv
 searxng/uwsgi.ini
+
+.DS_Store
+.env

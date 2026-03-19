@@ -29,9 +29,10 @@
 	}
 }
 
-{$SEARXNG_HOSTNAME}
+:5566
 
-tls {$SEARXNG_TLS}
+# tls {$SEARXNG_TLS}
+# 暫時註解掉 tls 以確保本地 5566 可通
 
 encode zstd gzip
 
