@@ -29,7 +29,7 @@
 	}
 }
 
-:5566
+{$SEARXNG_BIND_ADDRESS}:{$SEARXNG_PORT}
 
 # tls {$SEARXNG_TLS}
 # 暫時註解掉 tls 以確保本地 5566 可通
@@ -89,4 +89,4 @@ route {
 }
 
 # SearXNG
-reverse_proxy localhost:8080
+	reverse_proxy 127.0.0.1:8080
