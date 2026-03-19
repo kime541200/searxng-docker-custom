@@ -5,9 +5,9 @@ services:
     restart: unless-stopped
     networks:
       - searxng
-    ports:
-      - "${CADDY_HTTP_PORT:-8888}:80"
-      - "${CADDY_HTTPS_PORT:-8443}:443"
+    # ports:
+    #   - "${CADDY_HTTP_PORT:-8888}:80"
+    #   - "${CADDY_HTTPS_PORT:-8443}:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data:rw
@@ -59,6 +59,7 @@ services:
 
 networks:
   searxng:
+    name: searxng_network
 
 volumes:
   caddy-data:
