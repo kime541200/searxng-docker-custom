@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "lastIndexed": "2026-05-06",
+  "entries": [
+    {
+      "id": "git-sync-upstream",
+      "title": "Git 雙遠端同步官方 upstream 流程",
+      "tags": [
+        "git",
+        "upstream",
+        "workflow",
+        "deployment"
+      ],
+      "keywords": [
+        "dual remote",
+        "origin",
+        "upstream",
+        "merge upstream/master",
+        "secret key",
+        "env"
+      ],
+      "related_files": [
+        "experiences/git-sync-upstream.md",
+        ".gitignore",
+        ".env.example"
+      ],
+      "related_entries": [],
+      "symptom_snippet": "這個 fork 需要同時保留個人化部署設定，並定期接收官方 SearXNG Docker 倉庫的更新。如果只使用單一 remote，容易混淆「自己的版本」與「官方來源」，同步時也較難明確知道要從哪裡抓取更新。",
+      "updated": "2026-05-06"
+    }
+  ]
+}
